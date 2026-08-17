@@ -18,24 +18,4 @@
   DriveBit.stop(DBStopMode.Brake)
   basic.pause(1000)
 
-  // Set status LED to Red
-  DriveBit.setLedColor(DriveBit.DBColours(DBColors.Red));
-  basic.pause(1000);
-
-  // Clear LED
-  DriveBit.ledClear();
-  basic.pause(1000);
-
-  // Start LED Flashing Blue every 300ms
-  DriveBit.startFlash(DriveBit.DBColours(DBColors.Blue), 300)
-  basic.pause(1000);
-
-  // Stop LED Flashing
-  DriveBit.stopFlash();
-  basic.pause(1000);
-
-  // Set brightness of LED
-  DriveBit.ledBrightness(100);
-  basic.pause(1000);
-
 }
