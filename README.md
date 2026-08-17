@@ -1,6 +1,6 @@
 # MakeCode Package for Drive:Bit Motor Controller Board
 
-This library provides a Microsoft Makecode package for [4tronix Drive:Bit motor controller](https://4tronix.co.uk/drivebit)
+This library provides a Microsoft Makecode package for Digital Maker motor controller
 
 ## Driving the robot    
 The simplest way to drive the robot is by using the `go(...)` or `goms(...)` blocks.
@@ -98,37 +98,7 @@ If the robot leaves straight line to left by 25cm, bias it to the right by 15%:
 DriveBit.dbBias(dbRobotDirection.Right, 15)
 ```
 
-## FireLed helpers
 
-The DriveBit has a single FireLed fitted. This library defines some helpers
-for using it.
-The FireLed is automatically updated after every setting
-
-Set status FireLed to Green:
-
-```block
-DriveBit.setLedColor(0x00FF00)
-```
-
-Use the `startFlash(...)` block to start the LED flashing in the background at your selected speed (in ms) and colour.
-
-This example starts flashing the status LED in Red, once per second:
-
-```block
-DriveBit.startFlash(0xff0000, 1000)
-```
-
-Use the `stopFlash(...)` block to stop flashing the status LED:
-
-```block
-DriveBit.stopFlash()
-```
-
-Clear the status LED:
-
-```block
-DriveBit.ledClear()
-```
 
 ## Supported targets
 
