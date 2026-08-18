@@ -4,7 +4,7 @@
     "description": "Microsoft MakeCode extension for Digital Mkaer Drive:Bit",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
+        "core": "*"
     },
     "files": [
         "README.md",
